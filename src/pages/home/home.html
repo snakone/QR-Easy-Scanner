@@ -1,14 +1,44 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar text-center color="primary">
     <ion-title>
-      Ionic Blank
+      QR - Easy Scanner
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+<ion-content text-center padding class="grid">
+
+  <h2>QR Code Scanner</h2>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-3>
+        <ion-icon color="dark" name="desktop"></ion-icon>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon color="primary" name="globe"></ion-icon>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon color="secondary" name="contact"></ion-icon>
+      </ion-col>
+      <ion-col col-3>
+        <ion-icon color="danger" name="mail"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <p padding>
+    Press the button <strong>"SCAN"</strong> to do a QR Scan
   </p>
+  <p>
+    Seek <strong>Websites</strong>, <strong>Maps</strong>,
+    Add <strong>Contacts</strong>, Send <strong>Emails</strong>
+  </p>
+
+  <button ion-button
+          block
+          (click)="scan()">
+    SCAN
+  </button>
+
 </ion-content>

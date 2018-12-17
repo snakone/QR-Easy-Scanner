@@ -1,0 +1,14 @@
+<ion-content padding>
+
+  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+
+</ion-content>
+
+<ion-footer>
+    <button ion-button block
+            (click)="closeModal()">
+            Close
+    </button>
+</ion-footer>

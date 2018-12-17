@@ -1,6 +1,8 @@
 {
-  "name": "qr-app",
-  "integrations": {},
+  "name": "QR-Scanner",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "id": "135f941f"
 }

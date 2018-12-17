@@ -1,3 +1,30 @@
 page-home {
 
+ ion-content {
+   max-width: 600px;
+   position: relative!important;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ h2 {
+   padding-top: 10px;
+ }
+
+ .grid {
+   margin-top: 10%;
+ }
+
+ ion-icon {
+   font-size: 3em;
+ }
+
+ button {
+  margin: 50px auto!important;
+ }
+
+ .scroll-content {
+   overflow-y: hidden;
+ }
+
 }

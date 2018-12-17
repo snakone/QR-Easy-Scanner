@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar text-center color="primary">
+    <ion-title>Scanner History</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div text-center class="margin" *ngIf="history.length == 0">
+    <h4>There isn't any <strong>scan</strong></h4>
+    <h4>Try to make <strong>one!</strong></h4>
+  </div>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let data of history; let i = index">
+    <button ion-item detail-push
+            (click)="openScan(i)">
+            {{data.text | history}}
+    </button>
+
+    <ion-item-options side="end">
+       <button ion-button color="danger"
+               (click)="deleteScan(i)">
+         <ion-icon name="trash"></ion-icon>
+       </button>
+     </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

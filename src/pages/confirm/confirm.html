@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Add Contact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content text-center padding>
+
+  <div class="margin">
+    <h3>{{contactName}}</h3>
+    <h3>{{contactPhone}}</h3>
+    <h3>{{contactEmail}}</h3>
+
+    <button ion-button
+            (click)="createContact()">
+            ADD CONTACT
+    </button>
+
+    <button ion-button color="danger"
+            (click)="close()">
+            CLOSE
+    </button>
+  </div>
+
+</ion-content>
